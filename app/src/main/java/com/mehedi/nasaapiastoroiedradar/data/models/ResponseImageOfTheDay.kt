@@ -20,7 +20,6 @@ data class ResponseImageOfTheDay(
     val title: String? = null,
     @Json(name = "url")
     val url: String? = null
-    
-    
-    
-)
+){
+    fun convertHdurlToString(hdurl: String?): String = hdurl.toString()
+}

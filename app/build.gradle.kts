@@ -67,4 +67,7 @@ dependencies {
     implementation(libs.picasso)
     implementation(libs.retrofit)
     implementation(libs.retrofit.scalars)
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    kapt("com.github.bumptech.glide:compiler:4.15.0")
+
 }
