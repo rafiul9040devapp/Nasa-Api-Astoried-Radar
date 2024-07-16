@@ -37,9 +37,9 @@ class HomeFragment : Fragment() {
 
         viewModel.imageOfTheDay.observe(viewLifecycleOwner) { imageOfTheDay ->
             Log.d("TAG", "imageOfTheDay: $imageOfTheDay")
-            Glide.with(this)
-                .load(imageOfTheDay.hdurl)
-                .into(binding.astroidImg)
+            binding.apply {
+                response = imageOfTheDay
+            }
         }
         
         
